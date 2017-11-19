@@ -49,7 +49,9 @@ libraryDependencies ++= Seq(
   "org.scalikejdbc"        %% "scalikejdbc-play-initializer" % "2.5.+",
   "ch.qos.logback"         % "logback-classic"               % "1.2.3",
   "mysql"                  % "mysql-connector-java"          % "6.0.6",
-  "com.adrianhurt"         %% "play-bootstrap"               % "1.1-P25-B3"
+  "com.adrianhurt"         %% "play-bootstrap"               % "1.1-P25-B3",
+  "org.postgresql"         % "postgresql"                    % "42.0.0",
+  "org.flywaydb"           %% "flyway-play"                  % "3.1.0"
 )
 
 lazy val envConfig = settingKey[Config]("env-config")
